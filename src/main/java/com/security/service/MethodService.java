@@ -7,9 +7,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class MethodService {
     @Secured("ROLE_ADMIN")//访问此方法需要ADMIN角色
-    public String admin() {
-        return "hello admin";
-    }
+    public String admin() {return "hello admin";}
     @PreAuthorize("hasRole('ADMIN') and hasRole('DBA')")  //访问此方法需要ADMIN且DBA
     public String dba() {
         return "hello dba";
