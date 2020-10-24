@@ -43,7 +43,7 @@ spring.security.user.roles=user
 
 启动项目访问：http://localhost:8080/hello	项目自动跳转到由spring security提供的页面
 
-由于还没有做任何认证与拦截配置，默认会拦截所有的url请求
+输入账号密码后，再次访问http://localhost:8080/hello
 
 ## 基于内存的认证
 
